@@ -1,0 +1,4 @@
+dependencies {
+    testCompile "junit:junit:4.7"
+    testCompile "org.scalatest:scalatest_2.9.3:1.9.2"
+}
