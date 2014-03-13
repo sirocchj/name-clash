@@ -29,3 +29,19 @@ In the Gradle case the test cannot be compiled as it cannot find the `FooCompone
 trait that it needs to mix-in. This is due to the fact that there's no Scala bytecode
 which managed to get into the resulting .jar file (which can be located in
 `foo/build/libs/foo.jar`).
+
+## Puzzling bit:
+
+Have a try with this:
+
+```
+$ mv foo/src/main/scala/a/b/Foo.scala foo/src/main/scala/a/b/Foos.scala
+```
+
+and then again:
+
+```
+$ gradle clean test assemble
+```
+
+:)
